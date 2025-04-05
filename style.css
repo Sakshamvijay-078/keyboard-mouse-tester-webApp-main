@@ -1,0 +1,405 @@
+/* style="background-color: rgb(90, 1, 255); box-shadow: inset -8px -8px 4px rgb(23, 0, 82) , inset 8px 3px 2px rgb(23, 0, 82);" */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica";
+  background-color: #000;
+  box-sizing: border-box;
+}
+.heading{
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+}
+header {
+  background: url(background2.jpg) no-repeat scroll;
+  background-size: 1487px 741px;
+  background-color: #000;
+  height: 100%;
+  overflow: auto;
+}
+.key {
+  background-color: rgba(58, 58, 58, 0.216);
+  border-radius: 6px;
+  border:1px solid black;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  height: 52px;
+  text-align: center;
+  vertical-align: top;
+  width: 52px;
+  margin: 10px 0px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-shadow: inset -8px 3px 2px rgb(0, 0, 0) , inset 8px -8px 4px rgb(0, 0, 0);
+}
+.keys_lights{
+  background-color: rgba(58, 58, 58, 0.216);
+  border-radius: 6px;
+  border:1px solid cyan;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  height: 52px;
+  text-align: center;
+  vertical-align: top;
+  width: 52px;
+  margin: 10px 0px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-shadow: inset -8px 3px 2px rgb(0, 0, 0) , inset 8px -8px 4px rgb(0, 0, 0);
+}
+.key p{
+  position: relative;
+  top: -9px;
+}
+.keyboard-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  margin: -50px auto 0;
+  width: 1264px;
+  position: relative;
+}
+.header-gap {
+  width: 1264px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header-gap > div {
+  display: inline-block;
+  margin: 0 90px;
+}
+.keyboard-bg-blur {
+  background: rgba(183, 71, 71, 0) url(background2.jpg) no-repeat scroll
+  center 51%;
+  filter: blur(50px);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+
+}
+.keyboard-bg-fade {
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.keyboard-header {
+  background-color: rgba(33, 33, 33, 0.584);
+  color: #008b8b;
+  height: 60px;
+  overflow: hidden;
+  padding-top: 5px;
+  width: 101.4%;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px purple,0px -2px 5px red;
+}
+.keyOutput {
+  border-radius: 8px;
+  color: white  ;
+  display: inline-block;
+  font-size: 19px;
+  height: 40px;
+  text-align: center;
+  width: 192px;
+  margin: 7px 0;
+  font-family: consolas;
+  box-shadow: 2px -2px 1px rgba(255, 255, 255, 0.25),
+  -2px 2px 1px rgba(102, 102, 102, 0.397);
+border-left: 1px solid #0004;
+border-bottom: 1px solid #0004;
+border-top: 1px solid #0009;
+}
+.keyOutput > p {
+  margin-top: 5px;
+}
+.areaGap {
+  visibility: hidden;
+}
+.delKey {
+  font-size: 15px;
+  line-height: 0.9;
+}
+.delKey > p {
+  margin-top: 14px;
+}
+.t16 {
+  font-size: 16px;
+}
+.t16 > p {
+  margin-top: 18px;
+}
+.key.delKey.minSize > p {
+  font-size: 28px;
+  margin-top: -2px;
+}
+.key.delKey.plusKey > p {
+  font-size: 20px;
+  line-height: 0.7;
+}
+.brackets {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.keyboard-section {
+  background-color: rgba(41, 41, 41, 0.947);
+  border: 1px solid red;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 407px ;
+  box-shadow: 0px 4px 10px purple,0px -4px 10px red;
+}
+.key.backSpace > p {
+  margin: 10px;
+  transform: translateY(-26px);
+  text-align: center;
+  margin-left: 60px;
+}
+.key.backSpace {
+  font-size: 35px;
+  width: 150px;
+}
+.key.tab {
+  text-align: center;
+  width: 81px;
+}
+.key.arithmeticKey > p {
+  font-size: 20px;
+  margin-top: 16px;
+}
+.key.arithmeticKey.backslash {
+  width: 121px;
+}
+.key.plus {
+  float: right;
+  height: 116px;
+}
+.key.plus > p {
+  margin-top: 45px;
+}
+.key.caps {
+  text-align: center;
+  font-size: 16px;
+  width: 105px;
+}
+.key.caps > p {
+  text-align: center;
+  margin-left: 7px;
+  margin-top: 17px;
+}
+.key.enter {
+  width: 155px;
+}
+.key.enter > p {
+  text-align: center;
+  margin-left: 112px;
+  font-size: 44px;
+  transform: translateY(-70px);
+}
+.key.shiftLeft {
+  width: 132px;
+}
+.key.shiftLeft > p,
+.key.shiftRight > p {
+  font-size: 16px;
+  margin-top: 18px;
+  text-align: center;
+  margin-left: 7px;
+}
+.key.shiftRight {
+  width: 132px;
+}
+.key.enterRight {
+  float: right;
+  height: 116px;
+}
+.key.enterRight > p {
+  font-size: 16px;
+  margin-top: 48px;
+}
+.key.ctrl1,
+.key.ctrl2 {
+  text-align: center;
+  width: 90px;
+  margin-bottom: 0;
+}
+.key.ctrl2{
+  width: 65px;
+}
+.key.cont {
+  width: 66px;
+}
+.key.cont > p {
+  margin: 14px auto 0;
+  text-align: center;
+}
+.key.arrowUp > p {
+  font-size: 26px;
+  margin-top: 9px;
+  transform: rotate(-90deg);
+}
+.key.wndw > p {
+  margin: 14px auto 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+.key.wndw {
+  width: 70px;
+  color: white;
+}
+.key.alt {
+  width: 70px;
+}
+.key.space {
+  width: 325px;
+}
+
+.key.arrowLeft > p,
+.key.arrowRight > p {
+  font-size: 26px;
+  margin: 11px 0;
+  transform: rotate(180deg);
+}
+.key.arrowDown > p {
+  font-size: 26px;
+  margin: 14px 0 14px 5px;
+  transform: rotate(90deg);
+}
+h1 {
+  font-size: 18px;
+  margin: 0;
+  padding: 25px 0;
+}
+.key.press,
+.keyFunc.press {
+  background-color: #00ced1;
+  border-color: #00e1ef;
+  color: #000;
+  top: 0.2em;
+  box-shadow: 0 0 0 0.05em #000;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+}
+.slider::before{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.426) 0%, rgba(0, 0, 0, 0.547) 100%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  right: 0rem;
+  box-shadow: 0px 2px 7px #757575,0px 7px 13.5px #111111,inset 0px 1.7px 2px #979797, inset 0px -1.7px 2px #242424;
+}
+
+.slider::before, .knob{
+  width: 3.2rem;
+  height: 3.2rem;
+  position: relative;
+
+}
+
+.knob::before,.knob::after,.slider::before{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.knob::before{
+  top: 5.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 3px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px #eb3434;
+}
+
+.sliderkey{
+  z-index: 1;
+  border: none;
+  box-shadow: none;
+}
+
+/* Existing styles... */
+
+#resetButton {
+  color: blue;
+  position: relative;
+  /* Additional styles as needed */
+}
+
+#logoimg{
+  width: 40%;
+  margin-left: 0.18rem;
+  margin-top: 0.7rem;
+}
+
+.reset{
+  align-self: center ;
+  margin-left: 77rem;
+  padding: 0.5rem 3rem;
+  position: absolute;
+  top: 650px;
+  background-color: rgba(0, 0, 0, 0.593);
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 5px purple,0px -2px 5px red;
+  border: none;
+}
+.reset:hover{
+  border: 1px solid gray;
+}
+
+.spacebw{
+  width: 10px;
+  border: none;
+  box-shadow: none;
+  background: none ;
+}
+.spacebw2{
+  width: 5px;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+.spacebw3{
+  width: 20px;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+.spacebw4{
+  width: 1px;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.logobackground2{
+  border-radius: 50%;
+  box-shadow: 1px 1px 19px red;
+}
+.zero{
+  width: 70px;
+}
